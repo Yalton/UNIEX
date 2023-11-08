@@ -1,0 +1,8 @@
+# Webdriver connection string.
+browser = "http://localhost:4444"
+# MongoDB connection string.
+mongodb = "mongodb://usr:pwd@localhost:27017"
+# ElevenLabs api key.
+elevenlabs = ""
+# OpenAPI api key.
+openapi = ""

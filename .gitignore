@@ -1,0 +1,10 @@
+/target
+target
+config.toml
+content/*
+stack.yaml
+target/.rustc_info.json
+
+platform_creds/token.json
+platform_creds/credentials.ini
+platform_creds/youtube_creds.json
