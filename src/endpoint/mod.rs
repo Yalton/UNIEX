@@ -1,5 +1,5 @@
-mod structs;
 mod extractor;
+mod structs;
 
 pub use extractor::*;
 

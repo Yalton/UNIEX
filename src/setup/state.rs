@@ -6,7 +6,7 @@ use crate::setup::{Args, Cfg};
 #[derive(Debug, Clone)]
 pub struct State {
     browser: BrowserService,
-    title: TextExtractor
+    title: TextExtractor,
 }
 
 impl State {
@@ -14,10 +14,7 @@ impl State {
         let browser = BrowserService::connect(&cfg.browser).await?;
         let title = TextExtractor::new(&cfg.openapi)?;
 
-        Ok(Self {
-            browser,
-            title,
-        })
+        Ok(Self { browser, title })
     }
 }
 

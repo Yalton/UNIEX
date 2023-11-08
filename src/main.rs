@@ -1,12 +1,11 @@
-
 use std::net::SocketAddr;
 use std::time::Duration;
 
-use axum::{Router, Server};
 use axum::{error_handling::*, routing::*};
+use axum::{Router, Server};
 use setup::{Args, Cfg, State};
-use tower_http::{cors::*, request_id::*, trace::*};
 use tower_http::ServiceBuilderExt;
+use tower_http::{cors::*, request_id::*, trace::*};
 use tracing_subscriber::layer::SubscriberExt;
 use tracing_subscriber::util::SubscriberInitExt;
 
@@ -53,7 +52,6 @@ async fn main() -> anyhow::Result<()> {
             get(|| async { "You have hit the backend congratulations" }),
         )
         .route("/scrape_url", post(endpoint::scrape_url))
-
         .layer(middlewares)
         .with_state(state);
 
@@ -64,15 +62,13 @@ async fn main() -> anyhow::Result<()> {
     Ok(())
 }
 
+// let num = 69;
+// let link = vec!["BOOTYCHEECKS1".to_string(), "BOOTYCHEEKS2".to_string()];
+// let discovery_boi = Discover::new(num,link);
+// discovery_boi.crawl();
 
-
-    // let num = 69;
-    // let link = vec!["BOOTYCHEECKS1".to_string(), "BOOTYCHEEKS2".to_string()];
-    // let discovery_boi = Discover::new(num,link);
-    // discovery_boi.crawl();
-
-    // let cors = CorsLayer::new()
-    //     .allow_origin(Any)
-    //     .allow_methods([Method::GET, Method::POST, Method::PATCH, Method::DELETE])
-    //     .allow_credentials(true)
-    //     .allow_headers([AUTHORIZATION, ACCEPT, CONTENT_TYPE]);
+// let cors = CorsLayer::new()
+//     .allow_origin(Any)
+//     .allow_methods([Method::GET, Method::POST, Method::PATCH, Method::DELETE])
+//     .allow_credentials(true)
+//     .allow_headers([AUTHORIZATION, ACCEPT, CONTENT_TYPE]);

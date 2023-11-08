@@ -1,17 +1,13 @@
 use fantoccini::{ClientBuilder, Locator};
 use tokio::{fs::File, io::AsyncWriteExt};
 
-
-
 #[derive(Debug, Clone)]
 pub struct BrowserService {
     webdriver: String,
 }
 use base64::{engine::general_purpose, Engine as _};
 
-
 const BODY: &str = r#"/html/body"#;
-
 
 impl BrowserService {
     fn new(webdriver: &str) -> Self {

@@ -1,11 +1,9 @@
 // use chrono::{format::strftime::StrftimeItems, DateTime, Local};
 // use rand::seq::SliceRandom;
 
+use image::{load_from_memory, GenericImageView, ImageBuffer, RgbaImage};
 
-use image::{GenericImageView, ImageBuffer, RgbaImage, load_from_memory};
-
-
-#[tracing::instrument(skip_all)]    
+#[tracing::instrument(skip_all)]
 pub fn stack_images_vertically(img1_data: &[u8], img2_data: &[u8]) -> anyhow::Result<RgbaImage> {
     // Load the images from memory
     let img1 = load_from_memory(img1_data)?;
