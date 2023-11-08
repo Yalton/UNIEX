@@ -12,23 +12,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Yalton/repo_name">
+  <a href="https://github.com/Yalton/UNIEX">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Universal Extractor</h3>
 
   <p align="center">
     project_description
     <br />
-    <a href="https://github.com/Yalton/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Yalton/UNIEX"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Yalton/repo_name">View Demo</a>
+    <a href="https://github.com/Yalton/UNIEX">View Demo</a>
     ·
-    <a href="https://github.com/Yalton/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/Yalton/UNIEX/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Yalton/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/Yalton/UNIEX/issues">Request Feature</a>
   </p>
 </div>
 
@@ -65,9 +65,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `Yalton`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+This repository contains a dynamic web scraping tool that utilizes the GPT-4 Vision API to scrape any given website and return the scraped data in Markdown format. It's designed to convert visual web content into structured Markdown text, making it easier to document, analyze, and repurpose content found across the web.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,56 +94,53 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+- Ensure you have Rust installed on your system.
+- Obtain an API key from OpenAI for GPT-4 Vision API access.
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repository:
    ```sh
-   git clone https://github.com/Yalton/repo_name.git
+   git clone https://github.com/yourusername/gpt4-vision-scraper-md.git
    ```
-3. Install NPM packages
+2. Navigate to the project directory:
    ```sh
-   npm install
+   cd UNIEX
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. Install the required dependencies:
+   ```sh
+   cargo update
+   ```
+
+### Usage
+
+1. Set up your API key in the config.toml file:
+   ```sh
+   export OPENAI_API_KEY='your_api_key_here'
+   ```
+2. Use the provided scripts to start scraping:
+   ```sh
+   cargo run
+   ```
+3. Curl backend
+   ```sh
+    curl -X POST -H "Content-Type: application/json" -d '{"addr": "https://www.reddit.com/r/AskCulinary/comments/173g73f/is_lamb_a_gamey_meat/" http://0.0.0.0:8000/scrape_url
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
+- [ ] Add frontend
+- [ ] Add Database logging
 - [ ] Feature 3
     - [ ] Nested Feature
 
-See the [open issues](https://github.com/Yalton/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/Yalton/UNIEX/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -177,9 +172,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Your Name - [@yalt7117](https://twitter.com/yalt7117) - email@email_client.com
 
-Project Link: [https://github.com/Yalton/repo_name](https://github.com/Yalton/repo_name)
+Project Link: [https://github.com/Yalton/UNIEX](https://github.com/Yalton/UNIEX)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -198,16 +193,16 @@ Project Link: [https://github.com/Yalton/repo_name](https://github.com/Yalton/re
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Yalton/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/Yalton/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Yalton/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/Yalton/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/Yalton/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/Yalton/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Yalton/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/Yalton/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/Yalton/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/Yalton/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Yalton/UNIEX.svg?style=for-the-badge
+[contributors-url]: https://github.com/Yalton/UNIEX/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Yalton/UNIEX.svg?style=for-the-badge
+[forks-url]: https://github.com/Yalton/UNIEX/network/members
+[stars-shield]: https://img.shields.io/github/stars/Yalton/UNIEX.svg?style=for-the-badge
+[stars-url]: https://github.com/Yalton/UNIEX/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Yalton/UNIEX.svg?style=for-the-badge
+[issues-url]: https://github.com/Yalton/UNIEX/issues
+[license-shield]: https://img.shields.io/github/license/Yalton/UNIEX.svg?style=for-the-badge
+[license-url]: https://github.com/Yalton/UNIEX/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png
