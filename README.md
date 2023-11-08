@@ -128,8 +128,7 @@ To get a local copy up and running follow these simple example steps.
 
 - [ ] Add frontend
 - [ ] Add Database logging
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Use API key as environment variable
 
 See the [open issues](https://github.com/Yalton/UNIEX/issues) for a full list of proposed features (and known issues).
 
