@@ -69,18 +69,11 @@ This repository contains a dynamic web scraping tool that utilizes the GPT-4 Vis
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![Rust][Rust-lang.org]][Rust-url]
+* [![OpenAI][OpenAI.com]][OpenAI-url]
+* [![Geckodriver][Geckodriver.github.io]][Geckodriver-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -193,6 +186,14 @@ Project Link: [https://github.com/Yalton/UNIEX](https://github.com/Yalton/UNIEX)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[Rust-lang.org]: https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white
+[Rust-url]: https://www.rust-lang.org/
+[OpenAI.com]: https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white
+[OpenAI-url]: https://openai.com/
+[Geckodriver.github.io]: https://img.shields.io/badge/Geckodriver-4D4D4D?style=for-the-badge&logo=mozilla&logoColor=white
+[Geckodriver-url]: https://github.com/mozilla/geckodriver
+
 [contributors-shield]: https://img.shields.io/github/contributors/Yalton/UNIEX.svg?style=for-the-badge
 [contributors-url]: https://github.com/Yalton/UNIEX/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/Yalton/UNIEX.svg?style=for-the-badge
