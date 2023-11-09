@@ -8,7 +8,7 @@ pub struct TextExtractor {
     auth: Arc<String>,
 }
 
-const json_str: &str = r#"
+const JSON_STR: &str = r#"
 {
   "websiteData": [
     {
@@ -108,7 +108,7 @@ impl TextExtractor {
         let auth_header = format!("Bearer {}", self.auth.as_ref());
 
         let prompt = format!(
-            r#"""Extract all text from the provided image. Organize the extracted text into a structured JSON format that aligns with the {json_str} variable. Keep your response brief and do not include anything that is not the extracted text formatted as json The response should only include the JSON structure with the extracted text, without any formatting characters. Ensure that the JSON output accurately reflects the layout and content elements found in the image.Do not include ```json or ```"""#
+            r#"""Extract all text from the provided image. Organize the extracted text into a structured JSON format that aligns with the {JSON_STR} variable. Keep your response brief and do not include anything that is not the extracted text formatted as json The response should only include the JSON structure with the extracted text, without any formatting characters. Ensure that the JSON output accurately reflects the layout and content elements found in the image.Do not include ```json or ```"""#
         );
         let body = serde_json::json!({
             "model": "gpt-4-vision-preview",
@@ -151,5 +151,5 @@ impl TextExtractor {
         let ms = (Instant::now() - t0).whole_milliseconds();
         tracing::info!(target: "openai", ms);
         Ok(content.to_string())
-    }
+      }
 }
